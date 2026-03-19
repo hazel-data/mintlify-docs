@@ -87,7 +87,8 @@
             "pages": [
               "getting-started/welcome",
               "getting-started/quickstart",
-              "getting-started/key-concepts"
+              "getting-started/key-concepts",
+              "getting-started/prompting-tips"
             ]
           },
           {
@@ -197,7 +198,10 @@
               "recipes/ad-spend-optimization",
               "recipes/retention-and-ltv",
               "recipes/support-operations",
-              "recipes/weekly-reporting"
+              "recipes/weekly-reporting",
+              "recipes/fraud-detection",
+              "recipes/subscription-analysis",
+              "recipes/pricing-strategy"
             ]
           }
         ]

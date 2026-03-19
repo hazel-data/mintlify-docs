@@ -42,6 +42,27 @@ keywords: ["FAQ", "frequently asked questions", "help", "troubleshooting", "pric
   <Accordion title="What if my integration isn't listed?">
     Reach out via your shared Slack channel (current customers) or contact us at support@fromhazel.ai. We add new integrations regularly and prioritize based on customer requests.
   </Accordion>
+
+  <Accordion title="Why don't Hazel's numbers exactly match my platform dashboards?">
+    There are a few reasons why Hazel's numbers might differ slightly from what you see in your native dashboards:
+
+    - **Identity resolution** — Hazel links customers across platforms using email, phone, and other identifiers. This means metrics like new vs returning customer revenue may differ from what Shopify reports, because Hazel can recognize a "new" Shopify customer who previously purchased under a different email or through a different channel. Hazel's numbers are often more accurate because of this.
+    - **Google Analytics sampling** — GA4 uses sampling to estimate values, especially for larger date ranges. The numbers displayed in your GA dashboard are estimates, not exact counts. Hazel uses the same sampled data from GA's API.
+    - **Sync timing** — Hazel refreshes data every 4 hours. Depending on when you ask, there may be a few hours of lag compared to a real-time dashboard.
+    - **Data transformations** — Hazel normalizes and cleans data across sources (e.g., handling refunds, cancellations, currency conversions). This can produce slightly different totals than raw platform data.
+
+    If you notice a significant discrepancy, reach out to your Hazel team — we're always improving data accuracy and want to investigate any gaps.
+  </Accordion>
+
+  <Accordion title="Can I upload files like CSVs or spreadsheets?">
+    Yes. You can upload CSV files directly in the chat by clicking the attachment button. Hazel will analyze the data alongside your connected sources. There are file size limits, so for very large files, reach out to your Hazel team and we can help process the data.
+
+    Excel (.xlsx) and PDF files are not currently supported for direct upload — export to CSV first.
+  </Accordion>
+
+  <Accordion title="How long does the initial data sync take?">
+    It depends on the platform and your data volume. Most integrations finish within a few hours. High-volume Shopify stores or platforms with years of event-level data (like Klaviyo) can take 1–3 days. You'll get an email when your data is ready. You can start asking questions about partially synced data while the full backfill completes.
+  </Accordion>
 </AccordionGroup>
 
 ## Features
@@ -57,6 +78,18 @@ keywords: ["FAQ", "frequently asked questions", "help", "troubleshooting", "pric
 
   <Accordion title="Can I share Hazel's responses with my team?">
     Yes. You can share any thread, and scheduled reports will be able to be delivered to Slack channels or email distribution lists.
+  </Accordion>
+
+  <Accordion title="Can I close my laptop while Deep Thinking is running?">
+    Yes. Deep Thinking runs on Hazel's servers, not your browser. You can close your laptop, switch tabs, or go offline entirely. Hazel will email you when the analysis is complete, and you can review the full results anytime by opening the thread.
+  </Accordion>
+
+  <Accordion title="I'm getting a 'conversation too long' error">
+    This means your thread has reached the conversation length limit. Start a new thread for your next question — Hazel performs best when threads stay focused on a single topic. If you frequently hit this limit, try breaking your work into separate threads by topic (e.g., one for marketing analysis, one for subscription churn).
+  </Accordion>
+
+  <Accordion title="Is Memory shared across my team?">
+    There are two types. **Org Memory** is shared across everyone in your organization — when one person adds a definition, everyone benefits. **User Memory** is personal to you and only affects your conversations. [Learn more about Memory](/features/memory).
   </Accordion>
 </AccordionGroup>
 

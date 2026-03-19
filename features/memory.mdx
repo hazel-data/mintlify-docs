@@ -74,6 +74,34 @@ Here are some examples to get you started:
   "I manage our CX team. I'm focused on first response time, resolution rate, and CSAT scores."
 </Accordion>
 
+## Teach Hazel about your data history
+
+One of the most impactful uses of Memory is documenting historical events that affect how your data should be interpreted. Without this context, Hazel might misread patterns in your data.
+
+<Accordion title="Platform migrations">
+  If you migrated between platforms (e.g., from one subscription provider to another, or consolidated multiple Shopify stores into one), tell Hazel when the migration happened and how it affects the data.
+
+  Example: *"We migrated from Recharge to Skio in September 2025. Historical subscription data before that date is in Recharge. After September, all subscription data is in Skio."*
+</Accordion>
+
+<Accordion title="Data imports that changed dates">
+  When importing historical orders into a new Shopify store, some date fields (like "Created At") may get overwritten with the import date. Tell Hazel which date fields are reliable and which aren't.
+
+  Example: *"We consolidated 3 Shopify stores into one in May 2025. The 'Order Processed At' date is accurate, but 'Order Created At' shows the import date for historical orders. Always use 'Processed At' for date-based analysis."*
+</Accordion>
+
+<Accordion title="Major business events">
+  Events like 3PL changes, payment processor issues, or significant spending shifts can distort trends. Documenting these helps Hazel contextualize anomalies.
+
+  Example: *"We changed 3PL providers in November 2024. Fulfillment quality was poor for 3 months before we switched, which drove up support tickets and refunds during that period."*
+</Accordion>
+
+<Accordion title="Order exclusions and filters">
+  If you routinely exclude certain orders from reporting — wholesale accounts, internal test orders, free samples — add those rules to Memory so they apply automatically.
+
+  Example: *"Always exclude orders tagged 'wholesale' or 'internal-test' from DTC revenue calculations. Exclude gift cards and free samples from product performance analysis."*
+</Accordion>
+
 ## How to manage memory
 
 Click **Memory** in the side nav to add, edit, or remove entries anytime. You can switch between Org Memory and User Memory tabs to manage each type separately.
