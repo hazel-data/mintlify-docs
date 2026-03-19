@@ -135,17 +135,30 @@
               "integrations/meta-ads",
               "integrations/google-ads",
               "integrations/google-analytics",
+              "integrations/google-search-console",
               "integrations/tiktok-ads",
+              "integrations/pinterest-ads",
+              "integrations/snapchat-ads",
+              "integrations/reddit-ads",
               "integrations/klaviyo",
               "integrations/attentive",
-              "integrations/fairing"
+              "integrations/fairing",
+              "integrations/tracksuit"
             ]
           },
           {
             "group": "Sales & commerce",
             "pages": [
               "integrations/shopify",
-              "integrations/amazon"
+              "integrations/amazon",
+              "integrations/amazon-ads"
+            ]
+          },
+          {
+            "group": "Subscriptions",
+            "pages": [
+              "integrations/recharge",
+              "integrations/skio"
             ]
           },
           {
@@ -156,9 +169,16 @@
             ]
           },
           {
-            "group": "Reviews",
+            "group": "Returns",
             "pages": [
-              "integrations/okendo"
+              "integrations/loop-returns"
+            ]
+          },
+          {
+            "group": "Reviews & surveys",
+            "pages": [
+              "integrations/okendo",
+              "integrations/yotpo"
             ]
           }
         ]

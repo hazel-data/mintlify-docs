@@ -22,15 +22,9 @@ Once you connect Klaviyo, Hazel has access to:
 
 ## How to connect
 
-import ConnectSteps from "/snippets/connect-steps.mdx";
+Find Klaviyo in the [Hazel marketplace](https://app.fromhazel.ai/integrations/marketplace?search=klaviyo) and click the **+** button. You'll sign in through Klaviyo in a popup window to authorize Hazel.
 
-<ConnectSteps />
-
-When connecting Klaviyo, you'll need to paste your private API key. In Klaviyo, go to **Settings > API Keys** and copy your private API key.
-
-<Tip>
-  Make sure you use a **private API key** (not a public one). The private key starts with `pk_` and is found under Settings > API Keys in Klaviyo.
-</Tip>
+**What you'll need:** A Klaviyo account with admin access.
 
 ## Example questions you can ask
 
@@ -51,7 +45,9 @@ Once your Klaviyo data is connected, try questions like these:
 
 - Hazel pulls both email and SMS data from Klaviyo.
 - Pair with Shopify to compare Klaviyo-attributed revenue against total store revenue.
-- Your data refreshes every 4 hours automatically.
+- **SMS doesn't have "open" rates** — unlike email, there's no way to track whether someone opened a text message. SMS engagement starts with clicks.
+- **Attribution windows** — by default, Klaviyo attributes revenue within a 5-day window for email and a 1-day window for SMS. Keep this in mind when comparing Klaviyo revenue numbers to other sources.
+- Your data refreshes automatically.
 
 import IntegrationCta from "/snippets/integration-cta.mdx";
 

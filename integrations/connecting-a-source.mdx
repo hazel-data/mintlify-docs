@@ -2,7 +2,7 @@
 title: "Connecting a source"
 sidebarTitle: "Connect a source"
 description: "Step-by-step guide to connecting your first integration."
-keywords: ["connect integration", "OAuth", "API key", "setup", "backfill"]
+keywords: ["connect integration", "OAuth", "API key", "setup", "backfill", "marketplace"]
 ---
 
 ## Connect in under a minute
@@ -17,21 +17,21 @@ import ConnectSteps from "/snippets/connect-steps.mdx";
 
 There are two ways integrations authenticate:
 
-- **OAuth** — You click "Connect" and sign in through the platform's own login screen (like signing in to Meta or Google). This is the most common method and the easiest. You don't need to copy or paste anything.
+- **OAuth** — You click the **+** button and sign in through the platform's own login screen (like signing in to Meta or Google). This is the most common method and the easiest. You don't need to copy or paste anything.
 
 - **API key** — Some platforms use API keys instead. You'll copy a key from that platform's settings and paste it into Hazel. We'll walk you through exactly where to find it.
 
 Both methods are secure. Hazel only requests the permissions it needs to read your data.
 
 <Tip>
-  Not sure which auth type your integration uses? Just click **Connect** — Hazel will guide you through the right flow automatically.
+  Not sure which auth type your integration uses? Just click the **+** button — Hazel will guide you through the right flow automatically.
 </Tip>
 
 ## Troubleshooting
 
 <AccordionGroup>
   <Accordion title="My data isn't syncing">
-    First, check that your integration shows as **Connected** in **Integrations** in the side nav. If it says "Error" or "Disconnected," try disconnecting and reconnecting. Some common causes: your password changed, your API key was rotated, or permissions were revoked on the platform's side.
+    First, check that your integration shows as **Connected** in **Integrations > Connections** in the side nav. If it says "Error" or "Disconnected," try disconnecting and reconnecting. Some common causes: your password changed, your API key was rotated, or permissions were revoked on the platform's side.
   </Accordion>
 
   <Accordion title="I don't see my data yet">
@@ -39,17 +39,17 @@ Both methods are secure. Hazel only requests the permissions it needs to read yo
   </Accordion>
 
   <Accordion title="I have multiple Shopify stores">
-    Hazel supports multiple Shopify stores. Connect each store separately from **Integrations** in the side nav. When you ask questions, Hazel will know which store the data comes from, and you can ask about them individually or together.
+    Hazel supports multiple Shopify stores. Each store needs its own app install — install the [Hazel Shopify app](https://apps.shopify.com/tryhazel) on each store separately. When you ask questions, Hazel will know which store the data comes from, and you can ask about them individually or together.
   </Accordion>
 
   <Accordion title="Can I disconnect a source?">
-    Yes. Go to **Integrations** in the side nav, find the connected source, and click **Disconnect**. Your historical data will be removed. You can always reconnect later and Hazel will backfill again.
+    Yes. Go to **Integrations > Connections** in the side nav, find the connected source, and disconnect it. Your historical data will be removed. You can always reconnect later and Hazel will backfill again.
   </Accordion>
 </AccordionGroup>
 
 ---
 
-**Looking for a specific integration?** Browse the [full list of 80+ data sources](/integrations/all-integrations).
+**Looking for a specific integration?** Browse the [full list of 80+ data sources](/integrations/all-integrations) or go directly to the [Hazel marketplace](https://app.fromhazel.ai/integrations/marketplace).
 
 import IntegrationCta from "/snippets/integration-cta.mdx";
 

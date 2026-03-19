@@ -21,11 +21,9 @@ Once you connect Google Analytics, Hazel has access to:
 
 ## How to connect
 
-import ConnectSteps from "/snippets/connect-steps.mdx";
+Find Google Analytics in the [Hazel marketplace](https://app.fromhazel.ai/integrations/marketplace?search=google+analytics) and click the **+** button. You'll sign in through Google in a popup window — use the account that has access to your GA4 property.
 
-<ConnectSteps />
-
-When connecting Google Analytics, you'll be redirected to Google to authorize the connection. Use the account that has access to your GA4 property.
+**What you'll need:** A Google account with access to your GA4 property.
 
 ## Example questions you can ask
 
@@ -42,6 +40,8 @@ Once your Google Analytics data is connected, try questions like these:
 
 - Hazel connects to **GA4** (Google Analytics 4). If you're still on Universal Analytics, you'll need to set up GA4 first.
 - Pair with Shopify and your ad platforms for end-to-end attribution — from ad click to site visit to purchase.
+- **Google Analytics doesn't provide user-level data** — this means Hazel can't join individual GA sessions to specific customers in Shopify. GA data is great for aggregate traffic and channel analysis, but not for connecting a specific person's site visit to their order.
+- Only **first-click and last-click attribution** are available from GA4. Multi-touch attribution models aren't supported.
 - Your data refreshes every 4 hours automatically.
 
 import IntegrationCta from "/snippets/integration-cta.mdx";
