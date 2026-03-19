@@ -1,33 +1,17 @@
 ---
 title: "Connecting a source"
+sidebarTitle: "Connect a source"
 description: "Step-by-step guide to connecting your first integration."
+keywords: ["connect integration", "OAuth", "API key", "setup", "backfill"]
 ---
 
 ## Connect in under a minute
 
 Adding a new data source to Hazel is quick. Here's how:
 
-<Steps>
-  <Step title="Go to Settings > Integrations">
-    From anywhere in Hazel, open **Settings** and click **Integrations**. You'll see a list of all available data sources.
-  </Step>
+import ConnectSteps from "/snippets/connect-steps.mdx";
 
-  <Step title="Browse available integrations">
-    Find the platform you want to connect. You can search by name or browse by category (Marketing, Sales, Finance, Support, Reviews).
-  </Step>
-
-  <Step title="Click Connect">
-    Hit the **Connect** button next to the integration you want to add.
-  </Step>
-
-  <Step title="Authorize access">
-    Depending on the integration, you'll either sign in through a secure popup (OAuth) or paste an API key. Follow the prompts — it takes about 30 seconds.
-  </Step>
-
-  <Step title="Wait for your initial sync">
-    Hazel starts pulling in your historical data right away. Most integrations finish their initial backfill within a few hours. You can start asking questions about recent data almost immediately.
-  </Step>
-</Steps>
+<ConnectSteps />
 
 ## OAuth vs API key
 
@@ -47,19 +31,19 @@ Both methods are secure. Hazel only requests the permissions it needs to read yo
 
 <AccordionGroup>
   <Accordion title="My data isn't syncing">
-    First, check that your integration shows as **Connected** in Settings > Integrations. If it says "Error" or "Disconnected," try disconnecting and reconnecting. Some common causes: your password changed, your API key was rotated, or permissions were revoked on the platform's side.
+    First, check that your integration shows as **Connected** in **Integrations** in the side nav. If it says "Error" or "Disconnected," try disconnecting and reconnecting. Some common causes: your password changed, your API key was rotated, or permissions were revoked on the platform's side.
   </Accordion>
 
   <Accordion title="I don't see my data yet">
-    Initial backfills can take a few hours, especially for platforms with a lot of historical data (like Shopify or Amazon). If it's been more than 24 hours and you still don't see data, reach out to our support team.
+    Initial backfills can take a few hours to a few days, especially for platforms with a lot of historical data (like Shopify or Amazon). If it's been more than a few days and you still don't see data, reach out via your shared Slack channel.
   </Accordion>
 
   <Accordion title="I have multiple Shopify stores">
-    Hazel supports multiple Shopify stores. Connect each store separately from Settings > Integrations. When you ask questions, Hazel will know which store the data comes from, and you can ask about them individually or together.
+    Hazel supports multiple Shopify stores. Connect each store separately from **Integrations** in the side nav. When you ask questions, Hazel will know which store the data comes from, and you can ask about them individually or together.
   </Accordion>
 
   <Accordion title="Can I disconnect a source?">
-    Yes. Go to Settings > Integrations, find the connected source, and click **Disconnect**. Your historical data will be removed. You can always reconnect later and Hazel will backfill again.
+    Yes. Go to **Integrations** in the side nav, find the connected source, and click **Disconnect**. Your historical data will be removed. You can always reconnect later and Hazel will backfill again.
   </Accordion>
 </AccordionGroup>
 

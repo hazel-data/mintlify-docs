@@ -29,6 +29,10 @@
       "dark": "#1C1917"
     }
   },
+  "metadata": {
+    "og:site_name": "Hazel Docs",
+    "og:image": "https://fromhazel.ai/images/og-docs.png"
+  },
   "navbar": {
     "links": [
       {
@@ -42,6 +46,18 @@
       "href": "https://fromhazel.ai/demo"
     }
   },
+  "anchors": [
+    {
+      "anchor": "Book a call",
+      "href": "https://calendly.com/clint-dunn/clint-hazel-intro",
+      "icon": "calendar"
+    },
+    {
+      "anchor": "What's new",
+      "href": "/resources/whats-new",
+      "icon": "sparkles"
+    }
+  ],
   "footer": {
     "socials": {
       "linkedin": "https://linkedin.com/company/fromhazel",
@@ -49,27 +65,9 @@
     },
     "links": [
       {
-        "header": "Product",
+        "header": "Get started",
         "items": [
-          { "label": "Features", "href": "https://fromhazel.ai/#features" },
-          { "label": "Integrations", "href": "/integrations/overview" },
-          { "label": "Pricing", "href": "https://fromhazel.ai/pricing" }
-        ]
-      },
-      {
-        "header": "Resources",
-        "items": [
-          { "label": "Documentation", "href": "/getting-started/welcome" },
-          { "label": "Prompt library", "href": "/recipes/overview" },
-          { "label": "What's new", "href": "/resources/whats-new" }
-        ]
-      },
-      {
-        "header": "Company",
-        "items": [
-          { "label": "About", "href": "https://fromhazel.ai/about" },
-          { "label": "Contact", "href": "/resources/contact-support" },
-          { "label": "Privacy", "href": "https://fromhazel.ai/privacy" }
+          { "label": "Book an intro call", "href": "https://calendly.com/clint-dunn/clint-hazel-intro" }
         ]
       }
     ]
@@ -97,7 +95,7 @@
             "icon": "sparkles",
             "pages": [
               "features/chat",
-              "features/quick-ask-vs-deep-thinking",
+              "features/ask-vs-deep-thinking",
               "features/charts-and-tables",
               "features/citations",
               "features/memory",
@@ -113,7 +111,8 @@
             "pages": [
               "resources/faq",
               "resources/whats-new",
-              "resources/contact-support"
+              "resources/contact-support",
+              "resources/security"
             ]
           }
         ]
@@ -147,12 +146,6 @@
             "pages": [
               "integrations/shopify",
               "integrations/amazon"
-            ]
-          },
-          {
-            "group": "Finance",
-            "pages": [
-              "integrations/stripe"
             ]
           },
           {
