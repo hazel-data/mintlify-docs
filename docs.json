@@ -97,6 +97,7 @@
               "features/chat",
               "features/ask-vs-deep-thinking",
               "features/charts-and-tables",
+              "features/artifacts",
               "features/citations",
               "features/memory",
               "features/scheduled-reports",
