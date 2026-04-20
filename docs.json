@@ -186,7 +186,7 @@
       },
       {
         "tab": "Recipes",
-        "icon": "lightbulb",
+        "icon": "book-open",
         "groups": [
           {
             "group": "Recipes",
