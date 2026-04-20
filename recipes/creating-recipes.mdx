@@ -34,7 +34,7 @@ From the Recipes page, click **Create Recipe**. You'll fill out:
 | Field | Required | Notes |
 |-------|----------|-------|
 | **Name** | Yes | Short label shown in the library and palette. Max 64 chars. |
-| **Slug** | Yes | The slash command users type. Lowercase with hyphens, max 64 chars. |
+| **Slash command** | Yes | What users type after `/` to invoke the recipe. Lowercase with hyphens, max 64 chars. |
 | **Description** | Yes | One or two sentences explaining when this recipe should run. Hazel uses this for auto-invocation. Max 256 chars. |
 | **Category** | Yes | Pick the closest fit from the seven categories. |
 | **Scope** | Yes | Personal (default) or Organization. |
@@ -48,7 +48,7 @@ Custom recipes start at version `v1.0`. Every save bumps the minor version (`v1.
 
 ## Edit an installed recipe
 
-On any recipe detail page, click the pencil icon to edit. You can change name, slug, description, category, and instructions. Saving bumps the recipe's version.
+On any recipe detail page, click the pencil icon to edit. You can change name, slash command, description, category, and instructions. Saving bumps the recipe's version.
 
 Edits apply immediately — the next conversation that invokes the recipe sees the new instructions.
 
