@@ -1,0 +1,67 @@
+---
+title: "Recipes overview"
+description: "Teach Hazel specialized workflows — from LTV analysis to brand guidelines — that it can run on command or choose automatically."
+keywords: ["recipes", "cookbook", "managed recipes", "custom recipes", "workflows", "slash commands"]
+icon: "book-open"
+---
+
+## What a recipe is
+
+A recipe is a reusable set of instructions that teaches Hazel how to run a specific workflow — calculating lifetime value, building a cohort analysis, drafting brand-safe copy, spotting fraud rings, and so on. Instead of pasting the same long prompt every time, you install a recipe once and invoke it with a slash command.
+
+Think of recipes as specialists on your team. Each one knows a single job deeply. When you need that job done, you hand it off.
+
+## Where recipes live
+
+Open **Recipes** in the side nav. You'll see two tabs:
+
+<Columns cols={2}>
+  <Card title="Cookbook" icon="book">
+    The library of recipes Hazel ships with. Browse by category, preview instructions, and install what you need.
+  </Card>
+  <Card title="Installed" icon="check">
+    Recipes available to you or your team. This is where you manage, edit, enable/disable, and delete recipes.
+  </Card>
+</Columns>
+
+## Managed vs. custom
+
+Every installed recipe is one of two types:
+
+- **Managed** — comes from Hazel's cookbook. When we ship an updated version, you'll see a banner on the recipe detail page offering the upgrade. Updating overwrites any edits you've made.
+- **Custom** — built by you or your team. No automatic updates; you own the instructions end-to-end.
+
+You can edit a managed recipe after installing it, but keep in mind an update will replace your changes. If you've made significant customizations, consider duplicating the instructions into a new custom recipe instead.
+
+## Personal vs. organization scope
+
+When installing a recipe or creating a custom one, you pick a scope:
+
+<Columns cols={2}>
+  <Card title="Personal" icon="user">
+    Only available in your conversations. Good for role-specific workflows, experiments, and anything you're not ready to share.
+  </Card>
+  <Card title="Organization" icon="building">
+    Available to everyone in your workspace. Good for shared playbooks — your LTV definition, your voice-of-customer template, your weekly review format.
+  </Card>
+</Columns>
+
+<Tip>
+  Default to Personal while you're iterating. Promote to Organization by re-creating it at the org scope once the workflow is dialed in.
+</Tip>
+
+## Categories
+
+Every recipe is tagged with one category so the cookbook stays browsable:
+
+- **Acquisition** — paid media, SEO, attribution, channel performance
+- **Customer Service** — support ops, voice-of-customer, ticket triage
+- **Merchandising** — catalog, bundles, pricing, inventory
+- **Operations** — reporting, forecasting, scenario planning
+- **Retention** — LTV, cohorts, churn, winback
+- **Subscription** — sub-specific metrics, cancel reasons, MRR analysis
+- **Miscellaneous** — anything that doesn't fit the above
+
+---
+
+**Next up:** Learn how to [invoke recipes](/recipes/invoking-recipes) in conversation.

@@ -1,0 +1,127 @@
+---
+title: "Writing great recipes"
+description: "Best practices for writing recipe instructions Hazel will follow reliably."
+keywords: ["recipe best practices", "recipe instructions", "prompt engineering", "writing recipes"]
+icon: "pencil"
+---
+
+A recipe is only as good as its instructions. These are the patterns we've seen work — and the traps that quietly break recipes in production.
+
+## Start with a clear description
+
+The description field is what Hazel reads to decide *whether* to run your recipe. Two sentences, concrete and specific.
+
+<Columns cols={2}>
+  <Card title="Good" icon="check">
+    "Calculate and segment customer lifetime value from order data. Covers cohort analysis, distribution, and LTV:CAC payback."
+  </Card>
+  <Card title="Too vague" icon="x">
+    "Helps with customer analysis."
+  </Card>
+</Columns>
+
+If your description could apply to five different recipes, Hazel will either pick the wrong one or pick nothing.
+
+## Be opinionated
+
+Recipes that hedge produce hedged answers. State defaults and stick to them.
+
+- *"Default: Net Lifetime Revenue. Upgrade to Gross Margin when COGS exists."*
+- *"Default horizon: 12 months. 24 for subscription businesses."*
+- *"Never blend subscription and one-time revenue — segment them."*
+
+Opinions can include a table of **defaults**, **exclusions**, **what to include**, and **what to flag**. The LTV cookbook recipe is a good model.
+
+## Front-load the recon step
+
+Tell Hazel what to check *before* it starts analyzing. This prevents it from inventing assumptions or asking unnecessary questions.
+
+```markdown
+Recon first (before asking anything):
+
+- Query the warehouse for orders (and customer/line tables)
+- Check for refund, discount, return fields
+- Check whether COGS is present
+- Check for acquisition fields (UTM, first-touch)
+
+Then decide whether to ask. If defaults fit and data is clear,
+proceed. Ask only when a choice materially changes output.
+```
+
+## Specify inclusions and exclusions
+
+Data gotchas are where analyses silently go wrong. Spell them out.
+
+> Exclude: PR/gifted, influencer seeding, internal/employee, $0 comped, draft.
+> Include: free replacements, sub trials, 100%-off acquisition offers (flag first-order impact).
+> **Exclude orders, not customers** — a PR recipient who later pays keeps their paid orders.
+
+## Define the output
+
+Tell Hazel what the final artifact should look like: chart type, columns, color scale, segments to surface.
+
+> **Artifact: cohort heatmap**
+>
+> Rows: cohort month. Columns: month 0, 1, 2, … Cells: cumulative revenue per customer.
+>
+> - Color by column (each period gets its own scale so cohorts are comparable at the same age)
+> - No download buttons inside the HTML
+
+## Keep it under 5,000 characters
+
+The instructions field has a hard 5k character limit. Shorter usually produces *better* results anyway — Hazel has to re-read the whole thing on every invocation.
+
+Tricks for staying tight:
+
+- Tables > paragraphs for decision logic
+- Bullet fragments > full sentences where clarity allows
+- Cut throat-clearing ("This recipe will help you…")
+- Remove anything Hazel already knows about ecommerce in general
+
+## Use markdown structure
+
+Hazel reads markdown, so use it:
+
+- `##` headings for sections (Starting the analysis, Cohort analysis, Data gotchas, Artifact)
+- Tables for decision matrices
+- Code fences for SQL patterns or exact question formats
+- Bold for *must-follow* rules
+
+## Patterns that work
+
+Across the cookbook, the recipes that perform best share a common shape:
+
+<Steps>
+  <Step title="Opening framing">
+    One paragraph on what the analysis actually answers and the most common trap.
+  </Step>
+  <Step title="Recon step">
+    What to check before asking or proceeding.
+  </Step>
+  <Step title="Core method">
+    The specific approach, with defaults.
+  </Step>
+  <Step title="Data gotchas">
+    Inclusions, exclusions, timing issues, survivorship traps.
+  </Step>
+  <Step title="Default positions">
+    A table of debates and where this recipe lands.
+  </Step>
+  <Step title="Artifact spec">
+    What the final chart or table should look like.
+  </Step>
+</Steps>
+
+Not every recipe needs every section — but use this as a checklist when you're stuck.
+
+## Iterate in the open
+
+Recipes are versioned, so there's no cost to shipping an imperfect first draft. Install it, try it on a few real questions, edit, try again. The version number ticks up each save so you can see how your thinking has evolved.
+
+<Tip>
+  Start a recipe as Personal scope while you iterate. Once it reliably produces the answer you want, re-create it at Organization scope so your team gets the tuned version from day one.
+</Tip>
+
+---
+
+**Next up:** Browse the [prompt library](/recipes/overview) for ready-to-use questions, or head back to [Recipes overview](/recipes/recipes-overview).

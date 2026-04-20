@@ -1,0 +1,76 @@
+---
+title: "Creating recipes"
+description: "Install a recipe from the cookbook or author your own custom recipe from scratch."
+keywords: ["create recipe", "install recipe", "custom recipe", "edit recipe", "update recipe"]
+icon: "plus"
+---
+
+There are two paths to a new recipe: install one from the cookbook, or write your own.
+
+## Install from the cookbook
+
+The cookbook is the fastest way to add a recipe. Every recipe there is maintained by Hazel and updated over time.
+
+<Steps>
+  <Step title="Browse or search">
+    Open **Recipes → Cookbook**. Filter by category, or search by name and description.
+  </Step>
+  <Step title="Preview the instructions">
+    Click any recipe to open the install dialog. Expand **View Instructions** to see exactly what Hazel will read when the recipe runs — no surprises.
+  </Step>
+  <Step title="Choose a scope">
+    **Install for Me** adds it to your personal library. **Install for Everyone** adds it at the organization scope.
+  </Step>
+</Steps>
+
+Once installed, the recipe moves from the Cookbook tab to the Installed tab. It's enabled by default and ready to invoke.
+
+## Create a custom recipe
+
+Custom recipes let you teach Hazel workflows unique to your business — your margin formula, your weekly review format, the way your team segments customers.
+
+From the Recipes page, click **Create Recipe**. You'll fill out:
+
+| Field | Required | Notes |
+|-------|----------|-------|
+| **Name** | Yes | Short label shown in the library and palette. Max 64 chars. |
+| **Slug** | Yes | The slash command users type. Lowercase with hyphens, max 64 chars. |
+| **Description** | Yes | One or two sentences explaining when this recipe should run. Hazel uses this for auto-invocation. Max 256 chars. |
+| **Category** | Yes | Pick the closest fit from the seven categories. |
+| **Scope** | Yes | Personal (default) or Organization. |
+| **Instructions** | Yes | Markdown body that Hazel reads when the recipe runs. Max 5,000 chars. |
+
+Custom recipes start at version `v1.0`. Every save bumps the minor version (`v1.1`, `v1.2`, …) so you can track how a recipe evolves.
+
+<Tip>
+  The quality of the instructions is what makes a recipe good or bad. Before you write a big one from scratch, read [Writing great recipes](/recipes/writing-great-recipes).
+</Tip>
+
+## Edit an installed recipe
+
+On any recipe detail page, click the pencil icon to edit. You can change name, slug, description, category, and instructions. Saving bumps the recipe's version.
+
+Edits apply immediately — the next conversation that invokes the recipe sees the new instructions.
+
+## Updating a managed recipe
+
+When Hazel ships a new version of a managed recipe, you'll see an amber banner at the top of the recipe detail page:
+
+> A new version (v1.3) is available for this recipe. **Update**
+
+Clicking **Update** pulls the latest instructions from the cookbook and replaces what's currently installed.
+
+<Note>
+  Updating a managed recipe **overwrites any edits you've made**. If you've customized the instructions and want to keep those changes, skip the update — or duplicate the customizations into a new custom recipe before updating.
+</Note>
+
+## Disabling and deleting
+
+- **Disable** — toggle the switch on the detail page. The recipe stays installed but is hidden from Hazel until you re-enable it.
+- **Delete** — click the trash icon. Deletion is permanent; you'll need to re-install from the cookbook or re-author a custom recipe to get it back.
+
+Personal recipes can only be deleted by the user who installed them. Organization recipes can be deleted by anyone in the org.
+
+---
+
+**Next up:** [Writing great recipes](/recipes/writing-great-recipes) — the practices that separate a recipe Hazel loves from one it ignores.

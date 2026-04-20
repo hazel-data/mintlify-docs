@@ -185,11 +185,20 @@
         ]
       },
       {
-        "tab": "Recipes & prompts",
+        "tab": "Recipes",
         "icon": "lightbulb",
         "groups": [
           {
-            "group": "Prompt library",
+            "group": "Recipes",
+            "pages": [
+              "recipes/recipes-overview",
+              "recipes/invoking-recipes",
+              "recipes/creating-recipes",
+              "recipes/writing-great-recipes"
+            ]
+          },
+          {
+            "group": "Example prompts",
             "pages": [
               "recipes/overview",
               "recipes/marketing-analysis",

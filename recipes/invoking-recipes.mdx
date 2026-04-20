@@ -1,0 +1,64 @@
+---
+title: "Invoking recipes"
+description: "Run a recipe explicitly with a slash command, or let Hazel pick the right one automatically."
+keywords: ["slash commands", "recipe invocation", "enabled recipes", "auto-invoke"]
+icon: "play"
+---
+
+There are two ways to put a recipe to work: call it directly with a slash command, or let Hazel decide when to use it.
+
+## Slash commands
+
+Every installed recipe has a slug. To run it, type `/` in the chat input, pick the recipe from the palette, and send the message.
+
+<Steps>
+  <Step title="Type /">
+    A palette appears above the input showing every installed, enabled recipe you have access to.
+  </Step>
+  <Step title="Filter by name or slug">
+    Keep typing to narrow the list — `/ltv`, `/cohort`, `/brand`. Arrow keys navigate, Enter selects.
+  </Step>
+  <Step title="Add context and send">
+    The slash command tells Hazel which recipe to run. Anything else in the message gives it the specifics — date range, segment, product line, whatever's relevant.
+  </Step>
+</Steps>
+
+For example:
+
+```
+/ltv for subscribers acquired in Q1, 12-month horizon
+```
+
+Hazel loads the full recipe instructions before it starts thinking, so the analysis follows the recipe's rules from the first step.
+
+## Automatic invocation
+
+You don't always need to know a recipe exists. Hazel sees the name and description of every enabled recipe and can pull in the right one on its own when your question matches.
+
+Ask something like *"What's our best customer cohort?"* and Hazel may decide to run your LTV recipe without being told. When it does, you'll see the recipe referenced in its response so you know which playbook it used.
+
+<Tip>
+  This is why **descriptions matter**. A clear, specific description helps Hazel match the recipe to the right questions. Vague descriptions mean the recipe gets picked rarely or at the wrong moments.
+</Tip>
+
+## Enabled vs. disabled
+
+Every recipe has an on/off switch on its detail page.
+
+- **Enabled** — visible in the slash palette and considered for automatic invocation
+- **Disabled** — stays installed but is hidden from Hazel entirely
+
+Disable recipes you've outgrown, recipes that are still being tuned, or recipes you only want used when explicitly invoked. Disabling is reversible; deleting is not.
+
+## Who sees what
+
+Which recipes show up in your slash palette depends on scope:
+
+- Personal recipes — only yours appear for you
+- Organization recipes — appear for every teammate in the workspace
+
+If you don't see a teammate's recipe, it's either Personal-scoped to them or disabled.
+
+---
+
+**Next up:** [Create your own recipe](/recipes/creating-recipes) from the cookbook or from scratch.
