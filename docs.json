@@ -159,7 +159,8 @@
             "group": "Subscriptions",
             "pages": [
               "integrations/recharge",
-              "integrations/skio"
+              "integrations/skio",
+              "integrations/stay-ai"
             ]
           },
           {
